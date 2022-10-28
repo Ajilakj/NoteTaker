@@ -118,15 +118,21 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
-  let jsonNotes = await notes.json();
+  //alert(window.location.pathname);
+  //let jsonNotes = await notes.json();
+  let jsonNotes = notes.json();
+  console.dir(jsonNotes);
   if (window.location.pathname === '/notes') {
+    alert("success");
     noteList.forEach((el) => (el.innerHTML = ''));
+    
   }
 
   let noteListItems = [];
 
   // Returns HTML element with or without a delete button
   const createLi = (text, delBtn = true) => {
+    alert("success");
     const liEl = document.createElement('li');
     liEl.classList.add('list-group-item');
 
