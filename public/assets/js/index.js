@@ -51,8 +51,8 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = () => {
-  hide(saveNoteBtn);
 
+  hide(saveNoteBtn);
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
@@ -90,6 +90,7 @@ const handleNoteDelete = (e) => {
   }
 
   deleteNote(noteId).then(() => {
+   // alert(noteId);
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -104,6 +105,7 @@ const handleNoteView = (e) => {
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
+  //alert("inside handleNewNoteView");
   activeNote = {};
   renderActiveNote();
 };
