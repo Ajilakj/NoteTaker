@@ -1,7 +1,7 @@
 # NoteTaker
 
 ![](./public/assets/screenshot.png)
-[To visit my note taker app]( https://ajilakj.github.io/notetaker/)
+[To visit my note taker app]( https://murmuring-sands-90674.herokuapp.com//)
 
 ## Description
 This is a note taking app. User can enter, save and view the notes.
