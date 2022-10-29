@@ -1,6 +1,6 @@
 # NoteTaker
 
-![](./public/assets/img/screenshot.png)
+![](./public/assets/screenshot.png)
 [To visit my note taker app]( https://ajilakj.github.io/notetaker/)
 
 ## Description
